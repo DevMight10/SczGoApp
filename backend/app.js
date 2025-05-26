@@ -11,5 +11,6 @@ app.use('/api/auth', require('./routes/auth.routes'));
 app.use('/api/usuario', require('./routes/usuario.routes'));
 app.use('/api/publicacion', require('./routes/publicacion.routes'))
 app.use('/api/historia', require('./routes/historia.routes'));
+app.use('/api/lugarTuristico', require ('./routes/lugarTuristico.routes'))
 
 module.exports = app;
