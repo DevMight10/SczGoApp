@@ -14,6 +14,7 @@ const lugarTuristicoSchema = new mongoose.Schema({
         ],
     },
     coordenadas: { typs: Number, required: [true, 'Las coordenadas son obligatorias'] },
+    coordenadas: { type: Number, required: [true, 'Las coordenadas son obligatorias'] },
     longitud: { type: Number, required: [true, 'La longitud es obligatoria'] },
     radioGeofence: { type: Number, default: 50 },
     imagenes: { type: [String], default: [] },

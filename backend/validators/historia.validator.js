@@ -1,6 +1,6 @@
 const validarEvento = (datos) => {
-  const { titulo, descripcion, fechaEvento } = datos;
-  if (!titulo || !descripcion || !fechaEvento) {
+  const { titulo, descripcion, fechaHistorica } = datos;
+  if (!titulo || !descripcion || !fechaHistorica) {
     throw new Error('Título, descripción y fecha del evento son obligatorios.');
   }
 };
