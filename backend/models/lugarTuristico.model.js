@@ -13,7 +13,7 @@ const lugarTuristicoSchema = new mongoose.Schema({
             'Iglesias'
         ],
     },
-    coordenadas: { typs: Number, required: [ture, 'Las coordenadas son obligatorias'] },
+    coordenadas: { typs: Number, required: [true, 'Las coordenadas son obligatorias'] },
     longitud: { type: Number, required: [true, 'La longitud es obligatoria'] },
     radioGeofence: { type: Number, default: 50 },
     imagenes: { type: [String], default: [] },

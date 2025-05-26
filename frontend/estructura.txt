@@ -1,0 +1,91 @@
+FrontendFinal/
+│
+├── .expo/
+├── .vscode/
+├── .gitignore
+├── app.json
+├── assets/                 # Imágenes, fuentes, etc. globales
+├── api/                    # Configuración de llamadas a la API (axios, interceptors)
+│   ├── auth.js
+│   ├── axios.js
+│   └── rutas.ts
+├── app/                    # Aquí comienza el feature-based structure
+│   ├── features/
+│   │   ├── auth/
+│   │   │   ├── components/
+│   │   │   │   ├── SignInForm.tsx
+│   │   │   │   └── SignUpForm.tsx
+│   │   │   ├── hooks/
+│   │   │   │   └── useAuth.ts
+│   │   │   ├── store/
+│   │   │   │   └── useAuthStore.ts
+│   │   │   ├── api/
+│   │   │   │   └── authApi.ts
+│   │   │   └── index.tsx       # Pantallas principales de Auth (SignIn, SignUp)
+│   │   ├── profile/
+│   │   │   ├── components/
+│   │   │   │   ├── EditProfileForm.tsx
+│   │   │   │   └── ProfileHeader.tsx
+│   │   │   ├── hooks/
+│   │   │   │   └── useProfile.ts
+│   │   │   ├── store/
+│   │   │   │   └── useProfileStore.ts
+│   │   │   ├── api/
+│   │   │   │   └── profileApi.ts
+│   │   │   └── index.tsx       # Pantalla principal del perfil
+│   │   ├── monumentos/
+│   │   │   ├── components/
+│   │   │   │   ├── MonumentCard.tsx
+│   │   │   │   └── BannerMonumentos.tsx
+│   │   │   ├── hooks/
+│   │   │   │   └── useMonumentos.ts
+│   │   │   ├── store/
+│   │   │   │   └── useMonumentosStore.ts
+│   │   │   ├── api/
+│   │   │   │   └── monumentosApi.ts
+│   │   │   └── index.tsx       # Pantalla principal de monumentos
+│   │   ├── rutas/
+│   │   │   ├── components/
+│   │   │   │   ├── RutaActivaBanner.tsx
+│   │   │   │   ├── RutaCard.tsx
+│   │   │   │   └── BotonVisitar.tsx
+│   │   │   ├── hooks/
+│   │   │   │   └── useRuta.ts
+│   │   │   ├── store/
+│   │   │   │   └── useRutaStore.ts
+│   │   │   ├── api/
+│   │   │   │   └── rutasApi.ts
+│   │   │   └── index.tsx       # Pantalla principal de rutas
+│   │   ├── historia/
+│   │   │   ├── components/
+│   │   │   │   └── TimeLine.tsx
+│   │   │   ├── hooks/
+│   │   │   │   └── useHistoria.ts
+│   │   │   ├── store/
+│   │   │   │   └── useHistoriaStore.ts
+│   │   │   ├── api/
+│   │   │   │   └── historiaApi.ts
+│   │   │   └── index.tsx
+│   │   └── ...otros features
+│   ├── shared/               # Componentes, hooks, utils reutilizables entre features
+│   │   ├── components/
+│   │   │   ├── Modal.tsx
+│   │   │   ├── Button.tsx
+│   │   │   ├── InfoIcon.tsx
+│   │   │   └── ...
+│   │   ├── hooks/
+│   │   ├── utils/
+│   │   │   ├── directionsApi.ts
+│   │   │   └── iconosPorCategoria.ts
+│   │   └── const/
+│   │       ├── color.ts
+│   │       └── styles.ts
+│   ├── navigation/           # Configuración de rutas (tabs, stacks, layouts)
+│   │   ├── MainTabs.tsx
+│   │   ├── RootStack.tsx
+│   │   └── ...
+│   └── types/                # Tipos globales
+│       ├── Monumento.ts
+│       └── ...
+├── node_modules/
+└── package.json
